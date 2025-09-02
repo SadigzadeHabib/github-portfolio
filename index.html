@@ -12,6 +12,7 @@
       padding: 0;
       background: #1e1e1e;
       color: #ddd;
+      font-size: 17px;
     }
 
     header {
@@ -48,7 +49,6 @@
       flex-direction: column;
       justify-content: space-between;
       color: #eee;
-      max-height: 600px;
       overflow: hidden;
     }
 
@@ -60,28 +60,36 @@
       text-align: center;
     }
 
-    .project-card a.image-link {
-      display: block;
-      overflow: hidden;
-      border-radius: 4px;
-      margin-bottom: 20px;
+    /* Uniform image frame */
+    .project-card a.image-link{
+      display:block;
+      width:100%;
+      aspect-ratio:16/9;
+      overflow:hidden;
+      border-radius:10px;
+      background:#111;
+      margin-bottom:20px;
     }
-
-    .project-card img {
-      width: 100%;
-      max-height: 220px;
-      object-fit: cover;
-      transition: transform 0.3s ease;
+    .project-card a.image-link img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      transition:transform .3s ease, filter .3s ease;
+      filter:saturate(1.05) contrast(1.05);
     }
-
-    .project-card a.image-link:hover img {
-      transform: scale(1.05);
+    .project-card a.image-link:hover img{
+      transform:scale(1.04);
     }
 
     .project-card p {
-      font-size: 1.25em;
-      line-height: 1.4;
+      font-size: 1.1em;
+      line-height: 1.45;
       margin-bottom: 10px;
+    }
+
+    .project-card p strong {
+      font-weight: 700;
     }
 
     .project-card a.button {
@@ -160,7 +168,7 @@
 
 <header>
   <h1>Habib Sadigzade</h1>
-  <p>Data Analyst | Python • MySQL • Tableau </p>
+  <p>Data Analyst | Python • MySQL • Tableau</p>
 </header>
 
 <section class="projects-section">
@@ -168,50 +176,42 @@
 
     <div class="project-card">
       <h2>Apartment Safety Score</h2>
-      <a class="image-link" href="https://www.kaggle.com/code/habibsadigzade/apartment-safety-score-in-toronto" target="_blank">
-        <img src="pictures/apartment_safety.jpg" alt="Apartment Safety Visual">
+      <a class="image-link" href="https://github.com/SadigzadeHabib/github-portfolio/blob/e44d8d360d3f846de8ca3434cc0c70bd097e5ddb/apartment-safety-score-in-toronto.ipynb" target="_blank" rel="noopener">
+        <img src="pictures/apartment_safety.jpg" alt="Apartment Safety Visual" loading="lazy" decoding="async" fetchpriority="low">
       </a>
-      <p>Designed and implemented a data-driven scoring system to assess apartment safety across Toronto neighborhoods using open government datasets.
-         Conducted exploratory data analysis to identify high-risk zones and created a ranking system based on crime reports, incident types, and geographic clustering.
-         Produced actionable insights to support residents, urban planners, and policymakers in making data-informed safety decisions.</p>
-      <p><strong>Technology Used:</strong> Python (Pandas, NumPy, Matplotlib & Seaborn)</p>
-      <a href="https://www.kaggle.com/code/habibsadigzade/apartment-safety-score-in-toronto" class="button" target="_blank">VIEW PROJECT</a>
+      <p><strong>Summary:</strong> Built a data-driven scoring system to compare apartment safety across Toronto neighborhoods using open datasets. Cleaned and joined crime reports, explored incident patterns and clustering, and turned the analysis into a clear ranking to guide renters and city planners.</p>
+      <p><strong>Tech Used:</strong> Python (Pandas, NumPy, Matplotlib, Seaborn)</p>
+      <a href="https://github.com/SadigzadeHabib/github-portfolio/blob/e44d8d360d3f846de8ca3434cc0c70bd097e5ddb/apartment-safety-score-in-toronto.ipynb" class="button" target="_blank" rel="noopener">VIEW PROJECT</a>
     </div>
 
     <div class="project-card">
       <h2>Churn Prediction Analysis</h2>
-      <a class="image-link" href="https://www.kaggle.com/code/habibsadigzade/churn-prediction" target="_blank">
-        <img src="pictures/churn_prediction.png" alt="Churn Prediction Visual">
+      <a class="image-link" href="https://github.com/SadigzadeHabib/github-portfolio/blob/e44d8d360d3f846de8ca3434cc0c70bd097e5ddb/telecom-churn-prediction.ipynb" target="_blank" rel="noopener">
+        <img src="pictures/churn_prediction.png" alt="Churn Prediction Visual" loading="lazy" decoding="async" fetchpriority="low">
       </a>
-      <p>Built a predictive model to identify customers at high risk of churn using structured behavioral and demographic data.
-         Applied feature engineering and machine learning classification algorithms to uncover churn patterns and key retention drivers.
-         Provided business-ready recommendations to reduce churn and improve customer lifetime value through targeted strategies.</p>
-      <p><strong>Technology Used:</strong> Python (Pandas, NumPy, Scikit-learn), Logistic Regression, Random Forest, XGBoost</p>
-      <a href="https://www.kaggle.com/code/habibsadigzade/churn-prediction" class="button" target="_blank">VIEW PROJECT</a>
+      <p><strong>Summary:</strong> Developed models to flag customers most likely to churn from behavioral and demographic signals. Experimented with feature engineering and multiple classifiers, learned which drivers matter most, and translated results into practical retention ideas for reducing churn and increasing LTV.</p>
+      <p><strong>Tech Used:</strong> Python (Pandas, NumPy, Scikit-learn), Logistic Regression, Random Forest, XGBoost</p>
+      <a href="https://github.com/SadigzadeHabib/github-portfolio/blob/e44d8d360d3f846de8ca3434cc0c70bd097e5ddb/telecom-churn-prediction.ipynb" class="button" target="_blank" rel="noopener">VIEW PROJECT</a>
     </div>
 
     <div class="project-card">
-      <h2>Olist E-Commerce Data Analysis</h2>
-      <a class="image-link" href="https://www.kaggle.com/code/habibsadigzade/your-olist-sql-project-link" target="_blank">
-        <img src="pictures/olist_sql_project.jpg" alt="Olist SQL Project Visual">
+      <h2>Olist E-Commerce (3-Table SQL Modeling)</h2>
+      <a class="image-link" href="https://github.com/SadigzadeHabib/github-portfolio/blob/e44d8d360d3f846de8ca3434cc0c70bd097e5ddb/olist_ecommerce.sql" target="_blank" rel="noopener">
+        <img src="pictures/olist_sql_project.jpg" alt="Olist SQL Project Visual" loading="lazy" decoding="async" fetchpriority="low">
       </a>
-      <p>Developed and executed a comprehensive data cleaning and business analysis project using MySQL on Olist’s e-commerce order dataset. 
-         Standardized and transformed raw data into a clean analytical view, enhancing data quality and reliability for downstream use. 
-         Delivered actionable business insights on order status trends, delivery delays, and performance gaps through SQL-based reporting.</p>
-      <p><strong>Technology Used:</strong> MySQL (CTEs, Window Functions, Views)</p>
-      <a href="https://www.kaggle.com/code/habibsadigzade/your-olist-sql-project-link" class="button" target="_blank">VIEW PROJECT</a>
+      <p><strong>Summary:</strong> Cleaned and modeled the Olist database using only three core tables (<em>customers, orders, items</em>). Deduplicated customers by <code>customer_unique_id</code>, normalized order timestamps to <code>DATE</code>, and sanitized item prices/freight. Built a one-row-per-order fact table (<code>fact_orders_min</code>) with delivery KPIs (<code>days_to_deliver</code>, <code>delay_days</code>) and revenue metrics (<code>items_value</code>, <code>freight</code>, <code>gross_order_value</code>). Created reusable views (<code>v_monthly_kpis</code>, <code>v_top_state_by_month</code>, <code>v_city_revenue</code>, <code>v_recent_orders</code>) to drive dashboards and analysis.</p>
+      <p><strong>Tech Used:</strong> MySQL 8 (CTEs, Window Functions, Views), indexed joins, KPI modeling</p>
+      <a href="https://github.com/SadigzadeHabib/github-portfolio/blob/e44d8d360d3f846de8ca3434cc0c70bd097e5ddb/olist_ecommerce.sql" class="button" target="_blank" rel="noopener">VIEW SQL</a>
     </div>
 
     <div class="project-card">
       <h2>Interactive Dashboard with Tableau</h2>
-      <a class="image-link" href="https://public.tableau.com/your-dashboard-link" target="_blank">
-        <img src="pictures/tableau_dashboard.jpg" alt="Tableau Dashboard Visual">
+      <a class="image-link" href="https://public.tableau.com/your-dashboard-link" target="_blank" rel="noopener">
+        <img src="pictures/tableau_dashboard.jpg" alt="Tableau Dashboard Visual" loading="lazy" decoding="async" fetchpriority="low">
       </a>
-      <p>Created an interactive Tableau dashboard integrating insights from both the Apartment Safety Score and Churn Prediction projects. 
-         Visualized geographic safety rankings, customer churn indicators, and model-driven metrics to enhance stakeholder understanding. 
-         Demonstrated the ability to translate complex data analysis into intuitive, actionable business visuals.</p>
-      <p><strong>Technology Used:</strong> Tableau, Python (data prep), SQL (cleaning)</p>
-      <a href="https://public.tableau.com/your-dashboard-link" class="button" target="_blank">VIEW DASHBOARD</a>
+      <p><strong>Summary:</strong> Designed an interactive dashboard that brings together the Safety Score and Churn projects. Focused on clear storytelling—mapping neighborhood risk, visualizing churn indicators, and exposing model metrics—so stakeholders can explore the data and make decisions quickly.</p>
+      <p><strong>Tech Used:</strong> Tableau, Python (data prep), SQL (cleaning)</p>
+      <a href="https://public.tableau.com/your-dashboard-link" class="button" target="_blank" rel="noopener">VIEW DASHBOARD</a>
     </div>
 
   </div>
@@ -219,9 +219,9 @@
 
 <section class="contact-section">
   <h2>Contact Me</h2>
-  <p>Email: sadigzadehabib@gmail.com<br>
-     LinkedIn: <a href="https://www.linkedin.com/in/habib-sadigzade-b0292b1a2" target="_blank">linkedin.com/in/habib-sadigzade</a><br>
-     GitHub: <a href="https://github.com/sadigzadehabib" target="_blank">github.com/sadigzadehabib</a></p>
+  <p>Email: <a href="mailto:sadigzadehabib@gmail.com">sadigzadehabib@gmail.com</a><br>
+     LinkedIn: <a href="https://www.linkedin.com/in/habib-sadigzade-b0292b1a2" target="_blank" rel="noopener">linkedin.com/in/habib-sadigzade</a><br>
+     GitHub: <a href="https://github.com/sadigzadehabib" target="_blank" rel="noopener">github.com/sadigzadehabib</a></p>
 
   <a href="resume.pdf" class="resume-button" download>Download My Resume</a>
 </section>
