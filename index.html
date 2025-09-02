@@ -60,7 +60,6 @@
       text-align: center;
     }
 
-    /* Uniform image frame */
     .project-card a.image-link{
       display:block;
       width:100%;
@@ -177,9 +176,9 @@
     <div class="project-card">
       <h2>Apartment Safety Score</h2>
       <a class="image-link" href="https://github.com/SadigzadeHabib/github-portfolio/blob/e44d8d360d3f846de8ca3434cc0c70bd097e5ddb/apartment-safety-score-in-toronto.ipynb" target="_blank" rel="noopener">
-        <img src="pictures/apartment_safety.jpg" alt="Apartment Safety Visual" loading="lazy" decoding="async" fetchpriority="low">
+        <img src="pictures/apartment_safety.jpg" alt="Apartment Safety Visual" loading="lazy">
       </a>
-      <p><strong>Summary:</strong> Built a data-driven scoring system to compare apartment safety across Toronto neighborhoods using open datasets. Cleaned and joined crime reports, explored incident patterns and clustering, and turned the analysis into a clear ranking to guide renters and city planners.</p>
+      <p><strong>Summary:</strong> Built a scoring system to compare apartment safety across Toronto neighborhoods. Cleaned and joined crime reports, explored incident patterns, and produced a ranking that helps renters and city planners.</p>
       <p><strong>Tech Used:</strong> Python (Pandas, NumPy, Matplotlib, Seaborn)</p>
       <a href="https://github.com/SadigzadeHabib/github-portfolio/blob/e44d8d360d3f846de8ca3434cc0c70bd097e5ddb/apartment-safety-score-in-toronto.ipynb" class="button" target="_blank" rel="noopener">VIEW PROJECT</a>
     </div>
@@ -187,29 +186,29 @@
     <div class="project-card">
       <h2>Churn Prediction Analysis</h2>
       <a class="image-link" href="https://github.com/SadigzadeHabib/github-portfolio/blob/e44d8d360d3f846de8ca3434cc0c70bd097e5ddb/telecom-churn-prediction.ipynb" target="_blank" rel="noopener">
-        <img src="pictures/churn_prediction.png" alt="Churn Prediction Visual" loading="lazy" decoding="async" fetchpriority="low">
+        <img src="pictures/churn_prediction.png" alt="Churn Prediction Visual" loading="lazy">
       </a>
-      <p><strong>Summary:</strong> Developed models to flag customers most likely to churn from behavioral and demographic signals. Experimented with feature engineering and multiple classifiers, learned which drivers matter most, and translated results into practical retention ideas for reducing churn and increasing LTV.</p>
+      <p><strong>Summary:</strong> Built ML models to predict customer churn from demographic and behavioral data. Experimented with feature engineering and classifiers to identify churn drivers and retention opportunities.</p>
       <p><strong>Tech Used:</strong> Python (Pandas, NumPy, Scikit-learn), Logistic Regression, Random Forest, XGBoost</p>
       <a href="https://github.com/SadigzadeHabib/github-portfolio/blob/e44d8d360d3f846de8ca3434cc0c70bd097e5ddb/telecom-churn-prediction.ipynb" class="button" target="_blank" rel="noopener">VIEW PROJECT</a>
     </div>
 
     <div class="project-card">
-      <h2>Olist E-Commerce (3-Table SQL Modeling)</h2>
+      <h2>Olist E-Commerce (SQL Modeling)</h2>
       <a class="image-link" href="https://github.com/SadigzadeHabib/github-portfolio/blob/e44d8d360d3f846de8ca3434cc0c70bd097e5ddb/olist_ecommerce.sql" target="_blank" rel="noopener">
-        <img src="pictures/olist_sql_project.jpg" alt="Olist SQL Project Visual" loading="lazy" decoding="async" fetchpriority="low">
+        <img src="pictures/olist_sql_project.jpg" alt="Olist SQL Project Visual" loading="lazy">
       </a>
-      <p><strong>Summary:</strong> Cleaned and modeled the Olist database using only three core tables (<em>customers, orders, items</em>). Deduplicated customers by <code>customer_unique_id</code>, normalized order timestamps to <code>DATE</code>, and sanitized item prices/freight. Built a one-row-per-order fact table (<code>fact_orders_min</code>) with delivery KPIs (<code>days_to_deliver</code>, <code>delay_days</code>) and revenue metrics (<code>items_value</code>, <code>freight</code>, <code>gross_order_value</code>). Created reusable views (<code>v_monthly_kpis</code>, <code>v_top_state_by_month</code>, <code>v_city_revenue</code>, <code>v_recent_orders</code>) to drive dashboards and analysis.</p>
-      <p><strong>Tech Used:</strong> MySQL 8 (CTEs, Window Functions, Views), indexed joins, KPI modeling</p>
+      <p><strong>Summary:</strong> Cleaned and modeled the Olist database using three core tables (<em>customers, orders, items</em>). Built a fact table with delivery KPIs and created views to analyze order delays, state/city revenue, and monthly KPIs.</p>
+      <p><strong>Tech Used:</strong> MySQL (CTEs, Views, Indexing)</p>
       <a href="https://github.com/SadigzadeHabib/github-portfolio/blob/e44d8d360d3f846de8ca3434cc0c70bd097e5ddb/olist_ecommerce.sql" class="button" target="_blank" rel="noopener">VIEW SQL</a>
     </div>
 
     <div class="project-card">
       <h2>Interactive Dashboard with Tableau</h2>
       <a class="image-link" href="https://public.tableau.com/your-dashboard-link" target="_blank" rel="noopener">
-        <img src="pictures/tableau_dashboard.jpg" alt="Tableau Dashboard Visual" loading="lazy" decoding="async" fetchpriority="low">
+        <img src="pictures/tableau_dashboard.jpg" alt="Tableau Dashboard Visual" loading="lazy">
       </a>
-      <p><strong>Summary:</strong> Designed an interactive dashboard that brings together the Safety Score and Churn projects. Focused on clear storytelling—mapping neighborhood risk, visualizing churn indicators, and exposing model metrics—so stakeholders can explore the data and make decisions quickly.</p>
+      <p><strong>Summary:</strong> Designed an interactive dashboard to visualize safety scores and churn insights. Focused on storytelling—mapping risks, visualizing churn drivers, and exposing metrics for better decisions.</p>
       <p><strong>Tech Used:</strong> Tableau, Python (data prep), SQL (cleaning)</p>
       <a href="https://public.tableau.com/your-dashboard-link" class="button" target="_blank" rel="noopener">VIEW DASHBOARD</a>
     </div>
