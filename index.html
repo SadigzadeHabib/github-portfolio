@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Habib Sadigzade | Portfolio</title>
+
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      background: #1e1e1e;
+      color: #ddd;
+    }
+
+    header {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    .projects-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    .project-card {
+      background: #2e2e2e;
+      border-radius: 8px;
+      padding: 20px 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #eee;
+      max-height: 600px;
+      overflow: hidden;
+    }
+
+    .project-card h2 {
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 1.25em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .project-card a.image-link {
+      display: block;
+      overflow: hidden;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    .project-card img {
+      width: 100%;
+      max-height: 220px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card a.image-link:hover img {
+      transform: scale(1.05);
+    }
+
+    .project-card p {
+      font-size: 1.25em;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    .project-card a.button {
+      align-self: center;
+      padding: 10px 20px;
+      border: 2px solid #ddd;
+      text-decoration: none;
+      font-weight: bold;
+      color: #ddd;
+      transition: background 0.2s ease;
+      margin-top: 20px;
+    }
+
+    .project-card a.button:hover {
+      background: #ddd;
+      color: #222;
+      border-color: #ddd;
+    }
+
+    .contact-section {
+      text-align: center;
+      margin: 60px auto;
+      padding: 20px;
+      background: #2e2e2e;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.8);
+      color: #eee;
+    }
+
+    .contact-section h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+
+    .contact-section p {
+      font-size: 1em;
+      line-height: 1.6;
+    }
+
+    .contact-section a {
+      color: #88c0d0;
+      text-decoration: none;
+    }
+
+    .contact-section a:hover {
+      color: #a3d0f8;
+    }
+
+    .resume-button {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 10px 25px;
+      background: #222;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background 0.2s ease;
+    }
+
+    .resume-button:hover {
+      background: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Habib Sadigzade</h1>
+  <p>Data Analyst | Python • MySQL • Tableau </p>
+</header>
+
+<section class="projects-section">
+  <div class="grid">
+
+    <div class="project-card">
+      <h2>Apartment Safety Score</h2>
+      <a class="image-link" href="https://www.kaggle.com/code/habibsadigzade/apartment-safety-score-in-toronto" target="_blank">
+        <img src="pictures/apartment_safety.jpg" alt="Apartment Safety Visual">
+      </a>
+      <p>Designed and implemented a data-driven scoring system to assess apartment safety across Toronto neighborhoods using open government datasets.
+         Conducted exploratory data analysis to identify high-risk zones and created a ranking system based on crime reports, incident types, and geographic clustering.
+         Produced actionable insights to support residents, urban planners, and policymakers in making data-informed safety decisions.</p>
+      <p><strong>Technology Used:</strong> Python (Pandas, NumPy, Matplotlib & Seaborn)</p>
+      <a href="https://www.kaggle.com/code/habibsadigzade/apartment-safety-score-in-toronto" class="button" target="_blank">VIEW PROJECT</a>
+    </div>
+
+    <div class="project-card">
+      <h2>Churn Prediction Analysis</h2>
+      <a class="image-link" href="https://www.kaggle.com/code/habibsadigzade/churn-prediction" target="_blank">
+        <img src="pictures/churn_prediction.png" alt="Churn Prediction Visual">
+      </a>
+      <p>Built a predictive model to identify customers at high risk of churn using structured behavioral and demographic data.
+         Applied feature engineering and machine learning classification algorithms to uncover churn patterns and key retention drivers.
+         Provided business-ready recommendations to reduce churn and improve customer lifetime value through targeted strategies.</p>
+      <p><strong>Technology Used:</strong> Python (Pandas, NumPy, Scikit-learn), Logistic Regression, Random Forest, XGBoost</p>
+      <a href="https://www.kaggle.com/code/habibsadigzade/churn-prediction" class="button" target="_blank">VIEW PROJECT</a>
+    </div>
+
+    <div class="project-card">
+      <h2>Olist E-Commerce Data Analysis</h2>
+      <a class="image-link" href="https://www.kaggle.com/code/habibsadigzade/your-olist-sql-project-link" target="_blank">
+        <img src="pictures/olist_sql_project.jpg" alt="Olist SQL Project Visual">
+      </a>
+      <p>Developed and executed a comprehensive data cleaning and business analysis project using MySQL on Olist’s e-commerce order dataset. 
+         Standardized and transformed raw data into a clean analytical view, enhancing data quality and reliability for downstream use. 
+         Delivered actionable business insights on order status trends, delivery delays, and performance gaps through SQL-based reporting.</p>
+      <p><strong>Technology Used:</strong> MySQL (CTEs, Window Functions, Views)</p>
+      <a href="https://www.kaggle.com/code/habibsadigzade/your-olist-sql-project-link" class="button" target="_blank">VIEW PROJECT</a>
+    </div>
+
+    <div class="project-card">
+      <h2>Interactive Dashboard with Tableau</h2>
+      <a class="image-link" href="https://public.tableau.com/your-dashboard-link" target="_blank">
+        <img src="pictures/tableau_dashboard.jpg" alt="Tableau Dashboard Visual">
+      </a>
+      <p>Created an interactive Tableau dashboard integrating insights from both the Apartment Safety Score and Churn Prediction projects. 
+         Visualized geographic safety rankings, customer churn indicators, and model-driven metrics to enhance stakeholder understanding. 
+         Demonstrated the ability to translate complex data analysis into intuitive, actionable business visuals.</p>
+      <p><strong>Technology Used:</strong> Tableau, Python (data prep), SQL (cleaning)</p>
+      <a href="https://public.tableau.com/your-dashboard-link" class="button" target="_blank">VIEW DASHBOARD</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact-section">
+  <h2>Contact Me</h2>
+  <p>Email: sadigzadehabib@gmail.com<br>
+     LinkedIn: <a href="https://www.linkedin.com/in/habib-sadigzade-b0292b1a2" target="_blank">linkedin.com/in/habib-sadigzade</a><br>
+     GitHub: <a href="https://github.com/sadigzadehabib" target="_blank">github.com/sadigzadehabib</a></p>
+
+  <a href="resume.pdf" class="resume-button" download>Download My Resume</a>
+</section>
+
+<footer>
+  <p>© 2025 Habib Sadigzade</p>
+</footer>
+
+</body>
+</html>
